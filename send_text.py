@@ -9,5 +9,4 @@ def sendsms(to, message, myhash):
 
 
 resp, code = sendsms('07982721214', 'Testing', '34d7baa8713936f8cbe8419d508f8257')
-print
-resp
+print resp
