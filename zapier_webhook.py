@@ -4,7 +4,7 @@ import sys
 import os
 from time import strftime, localtime
 
-def triggerSMS:
+def triggerSMS():
 	message= {'key1': strftime('%-I:%M %p', localtime()), 'key2': strftime("%d.%m.%Y", localtime())}  # strftime("%l:%M %p on %d.%m.%Y")
 	r = requests.post('https://hooks.zapier.com/hooks/catch/1848657/tkfcc4/', data=message)
 # print r.status_code
