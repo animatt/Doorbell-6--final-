@@ -11,7 +11,7 @@ import os
 
 USERNAME = "doorbellding@gmail.com"
 PASSWORD = "doorbell2"
-MAILTO = "tim@tieka.nl"
+MAILTO = "kvcrawford@icloud.com"
 MOSTRECENTSNAPSHOT = '/home/pi/camera/images/mostrecent.jpg'
 
 
