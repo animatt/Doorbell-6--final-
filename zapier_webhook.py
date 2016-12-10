@@ -2,7 +2,7 @@
 import requests, time
 import sys
 import os
-rrom time import strftime, localtime
+from time import strftime, localtime
 
 message= {'key1': strftime('%-I:%M %p', localtime()), 'key2': strftime("%d.%m.%Y", localtime())}  # strftime("%l:%M %p on %d.%m.%Y")
 r = requests.post('https://hooks.zapier.com/hooks/catch/1848657/tkfcc4/', data=message)
