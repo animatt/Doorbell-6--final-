@@ -6,17 +6,16 @@ inpin = 17
 GPIO.setup(inpin, GPIO.IN)
 
 import time
-import 
-
-prev_input = 0
+from zapier_webhook import triggerSMS
+from email_webhook import triggerEmail
 
 while True:
 	input = GPIO.input(inpin)
 	
-	if not prev_input and input:
+	if input == 1:
 		print 'Button pressed'
+		#triggerSMS()
+		#triggerEmail()
+		time.sleep(5)
 
-	prev_input = input
-
-	time.sleep(5)
 
