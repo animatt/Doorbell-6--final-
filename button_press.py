@@ -6,6 +6,7 @@ inpin = 17
 GPIO.setup(inpin, GPIO.IN)
 
 import time
+import 
 
 prev_input = 0
 
